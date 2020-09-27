@@ -1,0 +1,31 @@
+body{
+    width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fila{
+    div{
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.par{
+    div:nth-child(even){
+        background-color: black;
+    }
+}
+
+.impar{
+    div:nth-child(odd){
+        background-color: black;
+    }
+}
